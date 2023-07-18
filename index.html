@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+  <style>
+    .container {
+      max-width: 28rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto mt-10 p-6 bg-black rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-6 text-blue-500">Feedback Form</h1>
+    <form>
+      <div class="mb-4">
+        <label class="block text-white text-sm font-bold mb-2" for="name">Name:</label>
+        <input class="appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" required />
+      </div>
+      <div class="mb-4">
+        <label class="block text-white text-sm font-bold mb-2" for="email">Email:</label>
+        <input class="appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" required />
+      </div>
+      <div class="mb-4">
+        <label class="block text-white text-sm font-bold mb-2" for="feedback">Feedback:</label>
+        <textarea class="appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="feedback" required></textarea>
+      </div>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
